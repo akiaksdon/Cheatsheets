@@ -1,0 +1,22 @@
+docker version
+docker info // info 
+docker container run --publish 80:80 nginx // download nad run image
+                                                    // publish part opens maps container port and host port
+docker container run --publish 80:80 --detach nginx  // run in background
+docker container run --publish 80:80 --detach --name nginx  // run in background with name
+docker container logs $nameofcontainer //logs of container
+docker container top $nameofcontainer // processes in container
+docker container ls  // list all the container
+docker container stop $containerid
+docker container ls -a // lists all the container creation history 
+docker container rm -f $namesofcontainers[] // removes from list of history
+
+
+
+
+
+
+image and container
+
+image is the applciation we want to run  and conatainer is instance of image
+
